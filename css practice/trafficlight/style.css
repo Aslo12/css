@@ -1,0 +1,34 @@
+#outer{
+    height:200px;
+    width: 70px;
+    border: 2px solid black;
+
+}
+.ineer{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+#red{
+    background-color: red;
+    animation:colorAnimation 1s ease-in infinite;
+
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+
+@keyframes colorAnimation{
+    0%{
+       color: red;
+    }
+    100%{
+       color: yellow;
+    }
+}

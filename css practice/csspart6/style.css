@@ -1,0 +1,73 @@
+/* div{
+    height: 100px;
+    width: 300px;
+    background-color:black; */
+   
+    /* animation-name: fontAnimation;
+    animation-duration: 3s;
+    animation-timing-function:ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    /* animation: widthAnimation 2s ease-in 0s infinite alternate; */
+    /* animation: fontAnimation 2s ease-in 0s infinite alternate;
+} */
+
+/* @keyframes colorAnimation{
+    from{color: aqua;}
+    to{color: green;}
+}
+@keyframes fontAnimation{
+    from{font-size: 20px;}
+    to{font-size: 40px;}
+}
+
+@keyframes widthAnimation{
+    from{width: 5px;
+        font-size: 20px;
+        color:green;
+        border-radius: 2px;}
+    to{width: 300px;
+    font-size: 40px;
+    color:red;
+    border-radius: 20px;}
+    } */
+
+    #container{
+        height: 600px;
+        width: 600px;
+        background-color: pink;
+        border: 2px solid black;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-template-columns: repeat(12,1fr);
+        grid-gap: 10px;
+
+    }
+    .header{
+        /* height: 50px;
+        width: 50px; */
+       grid-column: 1/span 12;
+       
+    }
+    .sidebar{
+       grid-column: 1/span 3;
+       grid-row: 2/span 10;
+    }
+    .navigation{
+        grid-row: 2/span 1;
+        grid-column: 4/span 6;
+    }
+    .ads{
+        grid-column: 10/span 3;
+        grid-row: 2/span 10;
+    }
+    .main{
+        grid-row: 3/span 9;
+        grid-column: 4/span 6;
+    }
+    .footer{
+        grid-row: 12/span 1;
+        grid-column: 1/span 12;
+    }
